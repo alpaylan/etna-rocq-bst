@@ -27,7 +27,7 @@
       "Command": {
         "command": "${workload_path}/build_fuzzer",
         "args": [
-          "!fuzzer"
+          "!{fuzzer}"
         ]
       }
     }
