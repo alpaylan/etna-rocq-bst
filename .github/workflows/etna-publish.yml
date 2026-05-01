@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   publish:
-    uses: alpaylan/etna-cli/.github/workflows/run-and-publish.yml@fix-canary-rollout
+    uses: alpaylan/etna-cli/.github/workflows/run-and-publish.yml@rocq-precompile-cppo
     with:
       trials: 10
       timeout: 60
