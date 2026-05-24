@@ -1,6 +1,11 @@
 name = "bst-rocq"
 language = "Rocq"
 description = "Binary Search Tree property-based testing workload (Rocq/Coq)."
+strategies = [
+  "BespokeGenerator", 
+  "SpecificationBasedGenerator",
+  "TypeBasedGenerator",
+  "TypeBasedFuzzer"]
 
 mutations = [
   "insert_1",

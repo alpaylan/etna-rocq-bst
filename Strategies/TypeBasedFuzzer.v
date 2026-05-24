@@ -10,7 +10,7 @@ From BST Require Import Spec.
 #[local] Instance FuzzyNat : Fuzzy nat :=
   {| fuzz n := choose (n - 5, n + 5) |}.
 
-Derive (Arbitrary, Show, Sized, Fuzzy) for Tree.
+Derive Instance (Arbitrary, Show, Sized, Fuzzy) for Tree.
 
 #[local] Instance FuzzyProd {A} `{Fuzzy A} {B} `{Fuzzy B}  : Fuzzy (A * B)  :=
 {|

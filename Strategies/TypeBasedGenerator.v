@@ -7,7 +7,7 @@ Import MonadNotation.
 From BST Require Import Impl.
 From BST Require Import Spec.
 
-Derive (Arbitrary, Show) for Tree.
+Derive Instance (Arbitrary, Show) for Tree.
 
 Definition test_prop_InsertValid   :=
   forAll arbitrary (fun (t: Tree)  =>

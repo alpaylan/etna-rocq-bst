@@ -7,7 +7,7 @@ Import MonadNotation.
 From BST Require Import Impl.
 From BST Require Import Spec.
 
-Derive (Shrink) for Tree.
+Derive Instance (Shrink) for Tree.
 
 Fixpoint gen_bst (s : nat) (lo hi : nat) : G Tree :=
   match s with
